@@ -1,7 +1,7 @@
 <?php
 	
-	include("views.php");
-	include("views4.php");
+	include("http://wakilapp.azurewebsites.net/integrations/views.php");
+	include("http://wakilapp.azurewebsites.net/integrations/views4.php");
 	
 $emailbody = 0;
 if (!empty($_GET['emailbody'])) {
