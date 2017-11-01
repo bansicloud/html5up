@@ -2,5 +2,4 @@
 
 Always test
 
-![parametricQRcode.png]({{site.baseurl}}/parametricQRcode.png)
-
+![parametricQRcode.png](https://github.com/bansicloud/html5up/blob/master/parametricQRcode.png?raw=true)
