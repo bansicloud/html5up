@@ -1,0 +1,12 @@
+{
+  "messages": [
+    {
+      "attachment": {
+        "type": "image",
+        "payload": {
+          "url": "https://raw.githubusercontent.com/bansicloud/html5up/master/arvee.png"
+        }
+      }
+    }
+  ]
+}
