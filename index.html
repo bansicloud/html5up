@@ -10,6 +10,33 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
+		<link rel="import" href="/bower_components/simpla-text/simpla-text.html">
+<link rel="import" href="/bower_components/simpla-img/simpla-img.html">
+<link rel="import" href="/bower_components/simpla-admin/simpla-admin.html" async>
+		
+		<!-- Include Simpla, Netlify auth adapter, and cross-browser polyfill-->
+<script src="https://unpkg.com/simpla@^3.0.0"></script>
+<script src="https://unpkg.com/simpla@^3.0.0/adapters/netlify.js"></script>
+<script src="https://unpkg.com/webcomponents.js@^0.7.24/webcomponents-lite.min.js" async></script>
+
+<!-- Init Simpla -->
+<script>
+  Simpla.init({
+
+    // The Github repo you want Simpla to use
+    repo: 'bansicloud/html5up',
+
+    // Netlify auth adapter, initialize with your Netlify site name
+    auth: new SimplaNetlify({ site: 'pedantic-lovelace-03b30b' }),
+
+    // Public content source (optional)
+    // Defaults to fetching directly from Github
+    source: 'https://pedantic-lovelace-03b30b.netlify.com/'
+
+  });
+</script>
+		
 	</head>
 	<body>
 
@@ -20,6 +47,11 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Nikita</h1>
+							<!-- Block of editable richtext -->
+<simpla-text path="/text"></simpla-text>
+
+<!-- An editable image -->
+<img is="simpla-img" path="images/banner.jpg">
 							<p class="major"><!--[-->A (modular, highly tweakable) responsive one-page template designed by <a href="https://html5up.net">HTML5 UP</a> and released for free under the <a href="https://html5up.net/license">Creative Commons</a>.<!--]--></p>
 							<ul class="actions vertical">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
